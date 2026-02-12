@@ -222,10 +222,6 @@ gain_df.to_csv("Gain_Data.csv", encoding='utf-8', index=False)
 
 
 
-
-
-
-
 # Plot fitted amplitude for each wav file against input voltage
 for i in unique_frequencies:
     tempdf = df[df["frequency"] == i]
