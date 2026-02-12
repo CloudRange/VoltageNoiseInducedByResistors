@@ -3,7 +3,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-
+"""
+Scripts to create and plot piecewise polynomial functions for a set of data and save the results into a .CSV file 
+it includes code to plot its results for the amplifier gain and the calibration factor of the sound card
+"""
 
 ## Creates a set of piecewise polynomial functions for a set of data
 def get_fits(x, y, yerr, n=3):
