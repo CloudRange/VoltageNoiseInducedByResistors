@@ -44,9 +44,7 @@ def reduce_range(time, data, start, delta):
         time: Filtered time array
         data: Filtered Data array
     """
-
-    return time[(time > start) & (time < start + delta)], data[(time > start) & (time < start + delta)]
-
+    return time[(time >= start) & (time <= start + delta)], data[(time >= start) & (time <= start + delta)]
 
 def test_func(x, a, b, c):
     """

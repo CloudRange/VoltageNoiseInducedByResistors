@@ -29,7 +29,7 @@ def reduce_range(time, data, start, delta):
         data: Filtered Data array
     """
 
-    return time[(time > start) & (time < start + delta)], data[(time > start) & (time < start + delta)]
+    return time[(time >= start) & (time <= start + delta)], data[(time >= start) & (time <= start + delta)]
 
 
 ## Imports the WAV file and reads only the left channel of the stereo file
